@@ -1,0 +1,118 @@
+:root {
+    --top-bar-height: 45px;
+    --side-bar-width: 225px;
+    --side-bar-entry-height: 44px;
+}
+
+
+body {
+    margin: 0;
+    background: #303030;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-bar {
+    position: absolute;
+    height: var(--top-bar-height);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.top-bar .logo {
+    height: 70%;
+}
+
+.top-bar h1 {
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+    background: red;
+}
+
+.sidebar {
+    position: absolute;
+    top: var(--top-bar-height);
+    bottom: 0;
+    width: var(--side-bar-width);
+    background-image: url("/assets/sidebar_background.jpg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar:before,
+.sidebar:after {
+    content: "";
+}
+
+.sidebar a {
+    height: var(--side-bar-entry-height);
+    text-decoration: none;
+    border: dashed red 1px;
+}
+
+.tile-area {
+    position: absolute;
+    top: var(--top-bar-height);
+    bottom: 0;
+    left: var(--side-bar-width);
+    right: 0;
+    background: #101010;
+}
+
+@media screen and (max-width: 600px){
+    .sidebar {
+        animation: collapseSidebar 1s forwards;
+    }
+
+    .tile-area {
+        animation: expandTileArea 1s forwards;
+    }
+}
+
+@keyframes collapseSidebar {
+    0% { left: 0; }
+    100% { left: -225px; }
+}
+
+@keyframes expandTileArea {
+    0% { left: 225px; }
+    100% { left: 0; }
+}
