@@ -1,0 +1,24 @@
+/* Side Bar Animation */
+#sidebar {
+    transition: all var(--sidebar-expand-animation-duration) linear;
+}
+
+input[type=radio]:checked + .radio-custom-label {
+    animation: sidebar-label-clicked var(--sidebar-selection-animation-duration);
+    animation-fill-mode: forwards;
+}
+
+@keyframes sidebar-label-clicked {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 200% 200%;
+    }
+}
+
+/* Tile Area Animation */
+#tile-area {
+    transition: all var(--sidebar-expand-animation-duration) linear;
+}

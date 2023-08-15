@@ -1,5 +1,5 @@
 const sidebar = document.querySelector("#sidebar");
-const tileArea = document.querySelector(".tile-area");
+const tileArea = document.querySelector("#tile-area");
 const sidebarWidth = getComputedStyle(document.documentElement)
     .getPropertyValue("--side-bar-width");
 const selectedRadio = document.querySelector('#sidebar')
