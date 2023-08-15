@@ -9,8 +9,6 @@
 }
 
 #top-bar-logo {
-    width: calc(var(--top-bar-height) * 0.8);
-    height: calc(var(--top-bar-height) * 0.8);
     background: var(--top-bar-logo);
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,58 +23,14 @@
 .hamburger-menu::before,
 .hamburger-menu::after,
 .hamburger-menu input {
-    content: "";
-    width: 20px;
-    height: 3px;
     background: #ffffff;
     border-radius: 2px;
 }
 
 .hamburger-menu input {
     appearance: none;
-    padding: 0;
-    margin: 0;
     outline: none;
     pointer-events: none;
-}
-
-#sidebar-button {
-    padding-left: 9px;
-    height: var(--top-bar-button-height)
-}
-
-.search-bar {
-    position: relative;
-}
-
-.search-input {
-    position: relative;
-    right: 0;
-}
-
-.search-button {
-    position: absolute;
-    right: -10px;
-    margin-right: 10px;
-}
-
-#top-bar-search .search-input {
-    height: calc(var(--top-bar-button-height) - 5px);
-    border-radius: 50px;
-}
-
-#top-bar-search .search-button {
-    border-radius: 0 50px 50px 0;
-    height: var(--top-bar-button-height);
-}
-
-#top-bar-notification {
-    margin-left: 30px;
-}
-
-#top-bar-settings {
-    margin-left: 2px;
-    margin-right: 20px;
 }
 
 /* Side Bar Style */
@@ -86,7 +40,6 @@
 }
 
 .layout-option {
-    height: var(--side-bar-entry-height);
     display: flex;
     align-items: center;
 }
@@ -95,8 +48,6 @@
     color: var(--sidebar-text-color);
     font-weight: bold;
     font-size: 20px;
-    width: 100%;
-    height: var(--side-bar-entry-height);
     display: flex;
     align-items: center;
 }
@@ -106,9 +57,7 @@
 }
 
 .radio-custom-label i, .radio-line-tech i, .radio-csr i {
-    padding-right: 8px;
     font-size: 20px;
-    padding-left: 8px;
 }
 
 input[type=radio]:checked + .radio-custom-label {
@@ -127,4 +76,5 @@ input[type=radio]:checked + .radio-custom-label {
 /* Tile Area Style */
 #tile-area {
     background: var(--time-area-background-color);
+    color: hotpink;
 }
