@@ -1,13 +1,19 @@
+/* Config Start*/
+const mobileDeviceWidth = 600;  // Width where the website transitions from desktop to mobile in px
+
+/* Config End */
+
+
 const sidebar = document.querySelector("#sidebar");
 const tileArea = document.querySelector("#tile-area");
 const sidebarWidth = getComputedStyle(document.documentElement)
     .getPropertyValue("--side-bar-width");
-const selectedRadio = document.querySelector('#sidebar')
 let sidebarExpanded = false;
 let platform = checkPlatform();
 
 
 function toggleSidebar() {
+    console.log(sidebarWidth);
     if (sidebarExpanded) {
         sidebar.style.left = "-" + sidebarWidth;
         tileArea.style.left = "0";
@@ -27,7 +33,7 @@ function toggleSidebar() {
 }
 
 function checkPlatform() {
-    return (window.innerWidth < 600) ? "mobile" : "desktop";
+    return (window.innerWidth < mobileDeviceWidth) ? "mobile" : "desktop";
 }
 
 function resizeCallback() {

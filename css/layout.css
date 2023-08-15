@@ -46,12 +46,13 @@ body {
 }
 
 #top-bar-logo {
-    width: calc(var(--top-bar-height) * 0.8);
-    height: calc(var(--top-bar-height) * 0.8);
+    height: var(--top-bar-logo-size);
+    aspect-ratio: 1/1;
 }
 
 .search-bar {
     position: relative;
+    height: var(--top-bar-button-height);
 }
 
 .search-input {
@@ -64,22 +65,26 @@ body {
 }
 
 #top-bar-search .search-input {
-    height: calc(var(--top-bar-button-height) - 6px);
+    height: calc(100% - 6px);
     border-radius: 50px;
 }
 
 #top-bar-search .search-button {
     border-radius: 0 50px 50px 0;
-    height: var(--top-bar-button-height);
+    height: 100%;
     right: calc(var(--top-bar-button-height) / -2);
     margin-right: calc(var(--top-bar-button-height) / 2);
 }
 
 #top-bar-notification {
+    height: var(--top-bar-button-height);
+    width: auto;
     margin-left: 30px;
 }
 
 #top-bar-settings {
+    height: var(--top-bar-button-height);
+    width: auto;
     margin-left: 2px;
     margin-right: 20px;
 }
@@ -100,7 +105,6 @@ body {
 
 #sidebar-button {
     padding-left: 9px;
-    height: var(--top-bar-button-height)
 }
 
 .layout-option {
@@ -109,7 +113,7 @@ body {
 
 .layout-option label {
     width: 100%;
-    height: var(--side-bar-entry-height);
+    height: 100%;
 }
 
 .radio-custom-label i, .radio-line-tech i, .radio-csr i {
@@ -124,8 +128,4 @@ body {
     bottom: 0;
     left: var(--side-bar-width);
     right: 0;
-}
-
-#tile-area {
-
 }

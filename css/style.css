@@ -16,8 +16,9 @@
 }
 
 #top-bar-title {
-    font-size: calc(var(--top-bar-height) * 0.5);
+    font-size: var(--top-bar-title-height); /* 20px; */
     color: var(--top-bar-text-color);
+    white-space: nowrap;
 }
 
 .hamburger-menu::before,
@@ -47,7 +48,7 @@
 .layout-option label {
     color: var(--sidebar-text-color);
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--side-bar-font-size);
     display: flex;
     align-items: center;
 }
@@ -57,7 +58,7 @@
 }
 
 .radio-custom-label i, .radio-line-tech i, .radio-csr i {
-    font-size: 20px;
+    font-size: var(--side-bar-icon-size);
 }
 
 input[type=radio]:checked + .radio-custom-label {
