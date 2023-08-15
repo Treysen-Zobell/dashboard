@@ -15,9 +15,9 @@
     --sidebar-item-hover-color: #292929;
     --sidebar-item-selected-color: rgba(159, 159, 159, 0.5);
     --sidebar-accent-color: #009af3;
+    --time-area-background-color: #101010;
+    
+    /* Animation */
     --sidebar-selection-animation-duration: 0.2s;
     --sidebar-expand-animation-duration: 0.05s;
-    --time-area-background-color: #101010;
-    /* Animation */
-
 }
