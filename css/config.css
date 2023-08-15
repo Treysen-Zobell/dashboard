@@ -2,7 +2,8 @@
     /* Layout */
     --top-bar-height: 5%;
     --top-bar-title-height: 130%;
-    --top-bar-button-height: 50%;
+    --top-bar-search-height: 50%;
+    --top-bar-button-size: 125%;
     --top-bar-logo-size: 80%;
     --side-bar-width: 225px;
     --side-bar-entry-height: 5%;
@@ -14,6 +15,8 @@
     --top-bar-color: #303030;
     --top-bar-text-color: #ffffff;
     --top-bar-logo: url("/assets/logo.png");
+    --top-bar-button-color: #ffffff;
+    --top-bar-button-hover-color: #aaaaaa;
     --sidebar-background: url("/assets/sidebar_background.jpg");
     --sidebar-text-color: #ffffff;
     --sidebar-item-hover-color: #292929;

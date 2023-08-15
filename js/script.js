@@ -13,7 +13,6 @@ let platform = checkPlatform();
 
 
 function toggleSidebar() {
-    console.log(sidebarWidth);
     if (sidebarExpanded) {
         sidebar.style.left = "-" + sidebarWidth;
         tileArea.style.left = "0";
@@ -27,7 +26,6 @@ function toggleSidebar() {
             sidebar.style.left = "0px";
             tileArea.style.left = "0";
         }
-        console.log(sidebar.style.left);
     }
     sidebarExpanded = !sidebarExpanded;
 }

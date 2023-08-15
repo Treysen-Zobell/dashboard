@@ -52,7 +52,7 @@ body {
 
 .search-bar {
     position: relative;
-    height: var(--top-bar-button-height);
+    height: var(--top-bar-search-height);
 }
 
 .search-input {
@@ -72,19 +72,15 @@ body {
 #top-bar-search .search-button {
     border-radius: 0 50px 50px 0;
     height: 100%;
-    right: calc(var(--top-bar-button-height) / -2);
-    margin-right: calc(var(--top-bar-button-height) / 2);
+    right: calc(var(--top-bar-search-height) / -2);
+    margin-right: calc(var(--top-bar-search-height) / 2);
 }
 
 #top-bar-notification {
-    height: var(--top-bar-button-height);
-    width: auto;
     margin-left: 30px;
 }
 
 #top-bar-settings {
-    height: var(--top-bar-button-height);
-    width: auto;
     margin-left: 2px;
     margin-right: 20px;
 }

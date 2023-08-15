@@ -24,7 +24,7 @@
 .hamburger-menu::before,
 .hamburger-menu::after,
 .hamburger-menu input {
-    background: #ffffff;
+    background: var(--top-bar-button-color);
     border-radius: 2px;
 }
 
@@ -32,6 +32,22 @@
     appearance: none;
     outline: none;
     pointer-events: none;
+}
+
+.hamburger-menu input:hover {
+    background: var(--top-bar-button-hover-color);
+}
+
+#top-bar-notification, #top-bar-settings {
+    border: none;
+    background: none;
+    font-size: var(--top-bar-button-size);
+    color: var(--top-bar-button-color);
+}
+
+#top-bar-notification:hover,
+#top-bar-settings:hover {
+    color: var(--top-bar-button-hover-color);
 }
 
 /* Side Bar Style */
@@ -77,5 +93,4 @@ input[type=radio]:checked + .radio-custom-label {
 /* Tile Area Style */
 #tile-area {
     background: var(--time-area-background-color);
-    color: hotpink;
 }
