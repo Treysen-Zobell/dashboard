@@ -25,13 +25,17 @@
     </div>
 
     <div id="right-bar">
-        <div class="search-bar" id="top-bar-search">
-            <label>
-                <input class="search-input" type="text">
-            </label>
-            <button class="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        <div class="search-container" id="top-bar-search-container">
+            <form action="/search" method="get">
+                <input class="search-bar expand-right" id="top-search-bar" type="search" placeholder="Search">
+                <label class="search-button expand-right" for="top-search-bar"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </form>
+<!--            <label>-->
+<!--                <input class="search-input" type="text">-->
+<!--            </label>-->
+<!--            <button class="search-button">-->
+<!--                <i class="fa-solid fa-magnifying-glass"></i>-->
+<!--            </button>-->
         </div>
         <button class="notification" id="top-bar-notification">
             <i class="fa-solid fa-bell"></i>

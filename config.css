@@ -1,0 +1,31 @@
+:root {
+    /* Layout */
+    --top-bar-height: 5%;
+    --top-bar-title-height: 130%;
+    --top-bar-search-height: 70%;
+    --top-bar-search-width: 300px;
+    --top-bar-button-size: 125%;
+    --top-bar-logo-size: 80%;
+    --side-bar-width: 225px;
+    --side-bar-entry-height: 5%;
+    --side-bar-font-size: 90%;
+    --side-bar-icon-size: 140%;
+
+    /* Theme */
+    --font: 'Roboto', sans-serif;
+    --top-bar-color: #303030;
+    --top-bar-text-color: #ffffff;
+    --top-bar-logo: url("/assets/logo.png");
+    --top-bar-button-color: #ffffff;
+    --top-bar-button-hover-color: #aaaaaa;
+    --sidebar-background: url("/assets/sidebar_background.jpg");
+    --sidebar-text-color: #ffffff;
+    --sidebar-item-hover-color: #292929;
+    --sidebar-item-selected-color: rgba(159, 159, 159, 0.5);
+    --sidebar-accent-color: #009af3;
+    --time-area-background-color: #101010;
+    
+    /* Animation */
+    --sidebar-selection-animation-duration: 0.2s;
+    --sidebar-expand-animation-duration: 0.07s;
+}
